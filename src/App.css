@@ -1,5 +1,21 @@
+@import url('https://rsms.me/inter/inter.css');
+
+html { font-family: 'Inter', sans-serif; color: white; }
+
+@font-face {
+  font-family: "Kink";
+  src: local("Kinckqtest-Variable"),
+    url("./fonts/KinckqTest-Variable.ttf") format("truetype")
+}
+
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 .App {
   text-align: center;
+  background-color: #ecebdf;
+  color: black;
 }
 
 .App-logo {
@@ -14,18 +30,88 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Kink';
+  font-size: calc(10px + 4vmin);
+  letter-spacing: 0.8em;
 }
 
-.App-link {
-  color: #61dafb;
+.inter-font {
+  font-family: 'Inter';
+  letter-spacing: 0.2em;
+}
+
+.kink-font {
+  font-family: 'Kink';
+  letter-spacing: 0.4em;
+}
+
+.nav {
+  top: 0;
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+}
+
+.drop-shadow {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.nav-item {
+  font-family: 'Inter';
+  color: black;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.nav-item:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav-item:hover:after {
+  width: 100%; 
+  left: 0; 
+}
+
+.fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+
+.fill img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
+.divider {
+  border-top: 1px solid black;
+}
+
+footer {
+  margin-top: auto;
 }
 
 @keyframes App-logo-spin {
