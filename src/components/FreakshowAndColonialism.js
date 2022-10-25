@@ -5,8 +5,8 @@ const FreakshowAndColonialism = () => {
 
     return (
         <div className='inter-font'>
-            <h1 className='text-5xl kink-font mb-12'>The Victorian Freakshow & Colonialism</h1>
-            <div className='text-left p-12'>
+            <h1 className='text-5xl kink-font mb-8'>The Victorian Freakshow and Colonialism</h1>
+            <div className='text-left p-8'>
                 <p className='pb-12'>
                     With the advent of P.T. Barnum's Egyptian Hall and The Great Exhibition, the Victorian public in and around London became enamored by the exotic treasures and characters seemingly imported by colonial conquest. However, colonialism did not only aim to take or trade resources with the new world. It also intended to spread an elevated culture to the colonized regions.
                 </p>
